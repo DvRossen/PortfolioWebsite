@@ -1,0 +1,37 @@
+
+
+
+--------------------------------------------17-12-22--------------------------------------------------------------------
+<article id="changelog">
+        <!-- Major update . Small update . bug fix - state of update -->
+        <h1>Website version 0.1.1-a</h1>
+        <h2> Changelog 17/12/22: </h2>
+
+        <h2>Added/fixed:</h2>
+        <ul class="add">
+            <li>homepage finished</li>
+            <li>navbar functional</li>
+        </ul>
+
+        <h2>Removed:</h2>
+        <ul class="remove">
+            <li>nothing yet</li>
+        </ul>
+
+        <h2>Changed:</h2>
+        <ul class="change">
+            <li>nothing yet</li>
+        </ul>
+
+        <h2>To do:</h2>
+        <ul class="todo">
+            <li>Make Form (!!!)</li>
+            <li>Write site content (!!!)</li>
+            <li>Fill Gallery (!!!)</li>
+            <li>Add Socials (!!!)</li>
+            <li>Dropdown menu</li>
+            <li>Fix ugly changelog list</li>
+            <li>Same page content display(JS)</li>
+        </ul>
+
+    </article>

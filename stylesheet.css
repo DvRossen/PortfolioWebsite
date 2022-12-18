@@ -12,7 +12,6 @@
 /*base settings */
 body{
     min-height:100vh;
-    min-width:available;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -74,6 +73,7 @@ article{
     margin:auto;
     margin-top: 5vh;
     margin-bottom: 2vh;
+    padding-bottom: 1.6em;
 }
 
 /*text markup & padding*/
@@ -86,10 +86,20 @@ article h1{
     text-align: start;
     font-size: 2.3em;
     font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+article h2{
+    padding:1.5em;
+    color:#ceaada;
+    text-align: start;
+    font-size: 1.5em;
+    font-family: 'Varela Round', sans-serif;
     font-weight: normal;
 }
-article p, article ul li{
+article p, article ul li, form.form label.formtext, form.form input.formfield{ /*remove all form stuff when assignment is done */
     padding: 1.3em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
     margin:0;
     font-size: 1.2em;
     font-family: 'Trebuchet MS', sans-serif;
@@ -110,13 +120,53 @@ article p a:hover{
 /* list stuff */
 
 article#changelog ul.add{
-    list-style-image: url("img/icons/add.png");
+    list-style-image: url("utils/img/icons/add.png");
 }
 article#changelog ul.remove{
-    list-style-image:url("img/icons/remove.png");
+    list-style-image:url("utils/img/icons/remove.png");
 }
 article#changelog ul.change {
-    list-style-image: url("img/icons/change.png");
+    list-style-image: url("utils/img/icons/change.png");
+}article#changelog ul.todo {
+     list-style-image: url("utils/img/icons/todo.png");
+ }
+
+ /* stuff about forms, remove after assignment */
+form.form {
+    display: flex;
+    justify-content: start;
+    flex-direction:column;
+}
+
+form.form input.formfield{
+    padding:0;
+    margin-left: 1.3em;
+    margin-right: auto;
+    max-height: 1.3em;
+}
+form.form input.formfield:invalid:not(:placeholder-shown){
+    border: 3px solid #FF0000FF;
+}
+button.formButton{
+    font-family: "Varela Round", sans-serif;
+    margin-left: 1.3em;
+    margin-top: 0.6em;
+    color:#EBFEFF;
+    font-size: 1.2em;
+    background-color: #292929;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    max-height: 1.3em;
+    max-width: 5em;
+    border-style: outset ;
+    border-color: #000000;
+    border-width: 2px;
+}
+button.formButton:hover{
+    background-color: #783e8c;
+    border-style: outset;
+    border-color: #eba9ff;
 }
 
 

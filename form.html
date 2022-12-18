@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="js/main.js" defer></script>
+    <title>Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href=""> <!-- tab icon here-->
+</head>
+<!-- Thank you for looking at the code :D if you see anything I can improve let me know :) -->
+<body>
+<header>
+    <!-- Title here and/or image here -->
+</header>
+<nav class="navbar">
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="cle.html">CLE</a>
+    <a href="gallery.html">gallery</a>
+    <a href="socials.html">socials</a>
+    <a href="form.html">form</a>
+</nav>
+<main>
+    <article>
+        <h1 id="form">Form</h1>
+        <p>I'm currently using this website for a front-end assignment. One of the criteria for this assignment is that I have a properly working form on it, hence this page</p>
+        <form class="form" action="sentForm.html">
+            <label class="formtext" for="naam">Name</label>
+            <input class="formfield" type="text" required name="naam" id="naam" placeholder="your name here">
+            <label class="formtext" for="email">Email</label>
+            <input class="formfield" type="email" required name="email" id="email" placeholder="your email here">
+            <label class="formtext">I acknowledge that my information won't be stolen since there isn't any serverside code.
+            <input  type="checkbox" class="funkyLilCheckbox" required></label>
+            <button class="formButton" type="submit">Send</button>
+
+        </form>
+    </article>
+</main>
+</body>
