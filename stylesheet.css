@@ -8,7 +8,18 @@
     header{
     display:none;
     }
+    /* h2 headers get lose padding when less width is available*/
+    article h2, section h2{
+        margin:0;
+    }
 }
+/*When window loses height, change color, this is to show understanding of media queries*/
+@media only screen and (max-height: 300px){
+    body {
+    background-image:linear-gradient(to top, #783e8c,#eba9ff);
+    }
+}
+
 /*base settings */
 body{
     min-height:100vh;
@@ -46,38 +57,54 @@ nav.navbar a{
     font-family: "Trebuchet MS", sans-serif;
     color: #c1c0bc;
     text-align: center;
-    padding: 0.9em 1em;
+    padding: 0.9em ;
     text-decoration: none;
 }
 .navbar a:hover {
     background-color:#783e8c;
-}
-.navbar a:active{
-    /*background-color: #783e8c; !* im gonna have to use js for this aren't I? *!*/
 }
 
 /*main container stuff*/
 main{
     display: flex;
     justify-content: center;
+    align-items: start;
     flex-direction:column;
-    align-items: center;
     padding: 0;
     margin: 0;
     min-width: available;
+    min-height: 80vh ;
 }
-article{
+article, section{
     background-color: #525252 ;
     color: #EBFEFF;
     width: 75vw;
     margin:auto;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding-bottom: 1.6em;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    background-color:#292929;
+    margin:0;
+    padding:1.5em;
+    margin-top: 1em;
+    bottom:0;
+
+}
+footer p{
+    margin:0;
+    display:flex;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 0.8em;
+    color: #c1c0bc;
+
 }
 
 /*text markup & padding*/
-article h1{
+article h1, section h1{
     padding:1.5em;
     padding-left:0.7em;
     padding-top:0.5em;
@@ -88,7 +115,8 @@ article h1{
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
 }
-article h2{
+
+article h2, section h2{
     padding:1.5em;
     color:#ceaada;
     text-align: start;
@@ -96,7 +124,7 @@ article h2{
     font-family: 'Varela Round', sans-serif;
     font-weight: normal;
 }
-article p, article ul li, form.form label.formtext, form.form input.formfield{ /*remove all form stuff when assignment is done */
+article p, section p, article ul li, form.form label.formtext, form.form input.formfield{ /*remove all form stuff when assignment is done */
     padding: 1.3em;
     padding-top: 0.6em;
     padding-bottom: 0.6em;
@@ -108,13 +136,30 @@ article ul li{
     padding-top: 0;
     padding-bottom: 0;
 }
-article p a, article p a:visited{
+article p a, article p a:visited, section p a, section p a:visited{
     text-decoration:none;
     color:#ceaada;
 }
-article p a:hover{
+article p a:hover, section p a:hover{
     text-decoration:none;
     color: #eba9ff;
+}
+article picture, article.video{
+    display: flex;
+    flex-direction: row;
+    margin:0.5em;
+    justify-content: space-evenly;
+}
+article picture img{
+    width: min-content;
+    height: min-content;
+}
+article iframe {
+    display: flex;
+    justify-content: center;
+    width: 560px;
+    height: 315px;
+
 }
 
 /* list stuff */
@@ -144,9 +189,11 @@ form.form input.formfield{
     margin-right: auto;
     max-height: 1.3em;
 }
+
 form.form input.formfield:invalid:not(:placeholder-shown){
     border: 3px solid #FF0000FF;
 }
+
 button.formButton{
     font-family: "Varela Round", sans-serif;
     margin-left: 1.3em;
@@ -163,6 +210,7 @@ button.formButton{
     border-color: #000000;
     border-width: 2px;
 }
+
 button.formButton:hover{
     background-color: #783e8c;
     border-style: outset;

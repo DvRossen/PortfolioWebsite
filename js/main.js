@@ -2,11 +2,11 @@ window.addEventListener("load", init)
 
 
 function init(){
- addEventListener('click',buttonClickHandler);
+ addEventListener('click',checkBoxClickHandler);
 }
 
-
-function buttonClickHandler(e){
+// yes I wrote this entire script for a singular joke
+function checkBoxClickHandler(e){
 let clickedItem = e.target;
 if(clickedItem.classList.contains('funkyLilCheckbox')){
     window.alert("There is however JavaScript code :)");

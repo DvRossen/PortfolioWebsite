@@ -1,6 +1,50 @@
 
 
 
+-----------------------------------------18-12-22-----------------------------------------------------------------------
+<article id="changelog">
+        <!-- Major update . Small update . bug fix - state of update -->
+        <h1>Website version 0.2.1-a</h1>
+        <h2> Changelog 18/12/22: </h2>
+
+        <h2>Added/fixed:</h2>
+        <ul class="add">
+            <li>added: Form tab (for assignment)</li>
+            <li>added: About page content</li>
+            <li>added: script link so JavaScript is now available</li>
+            <li>added: working form</li>
+            <li>added: working form complete page</li>
+            <li>fix: Viewport Meta-tag all pages(all pages should remove header when under 500px wide)</li>
+        </ul>
+
+        <h2>Removed:</h2>
+        <ul class="remove">
+            <li>nothing yet</li>
+        </ul>
+
+        <h2>Changed:</h2>
+        <ul class="change">
+            <li>Change log interface</li>
+        </ul>
+
+        <h2>To do:</h2>
+        <ul class="todo">
+            <li>Write site content (!!!)</li>
+            <li>Fill Gallery (!!!)</li>
+            <li>Add Socials (!!!)</li>
+            <li>Add Video to socials</li>
+            <li>Dropdown menu</li>
+            <li>Fix ugly changelog list</li>
+            <li>Same page content display(JS)</li>
+            <li>Show old logs(JS)</li>
+        </ul>
+
+    </article>
+
+
+
+
+
 --------------------------------------------17-12-22--------------------------------------------------------------------
 <article id="changelog">
         <!-- Major update . Small update . bug fix - state of update -->
