@@ -1,5 +1,39 @@
 
 
+<article id="changelog">
+        <!-- Major update . Small update . bug fix - state of update -->
+        <h1>Website version 1.0.0-a</h1>
+        <h2> Changelog 18/12/22 - 18:00: </h2>
+
+        <h2>Added/fixed:</h2>
+        <ul class="add">
+            <li>Added: Footer</li>
+            <li>Added: About page content</li>
+            <li>Added: Second mediaquery for show</li>
+            <li>Added: Under construction page</li>
+            <li>Added: Iframe Video</li>
+        </ul>
+
+        <h2>Removed:</h2>
+        <ul class="remove">
+            <li>Temp: gallery, due to being incomplete</li>
+            <li>Temp: socials, due to being incomplete</li>
+        </ul>
+
+        <h2>Changed:</h2>
+        <ul class="change">
+            <li>Form container went from article to section</li>
+        </ul>
+
+        <h2>To do:</h2>
+        <ul class="todo">
+            <li>Dropdown menu</li>
+            <li>Fix ugly changelog list</li>
+            <li>Same page content display(JS)</li>
+            <li>Show old logs(JS)</li>
+        </ul>
+
+    </article>
 
 -----------------------------------------18-12-22-----------------------------------------------------------------------
 <article id="changelog">

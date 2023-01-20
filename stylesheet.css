@@ -1,24 +1,8 @@
 /* imports*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-/*mobile phone/responsive  media query*/
-@media only screen and (max-width: 500px)
-{
-    /* when display gets small, header gets removed for more text display */
-    header{
-    display:none;
-    }
-    /* h2 headers get lose padding when less width is available*/
-    article h2, section h2{
-        margin:0;
-    }
-}
-/*When window loses height, change color, this is to show understanding of media queries*/
-@media only screen and (max-height: 300px){
-    body {
-    background-image:linear-gradient(to top, #783e8c,#eba9ff);
-    }
-}
+
+
 
 /*base settings */
 body{
@@ -136,11 +120,11 @@ article ul li{
     padding-top: 0;
     padding-bottom: 0;
 }
-article p a, article p a:visited, section p a, section p a:visited{
+article p a, article p a:visited, section p a, section p a:visited, article li a{
     text-decoration:none;
     color:#ceaada;
 }
-article p a:hover, section p a:hover{
+article p a:hover, section p a:hover, article li a{
     text-decoration:none;
     color: #eba9ff;
 }
@@ -148,11 +132,11 @@ article picture, article.video{
     display: flex;
     flex-direction: row;
     margin:0.5em;
-    justify-content: space-evenly;
+    object-fit: contain;
 }
 article picture img{
-    width: min-content;
-    height: min-content;
+    display: flex;
+    align-self: center;
 }
 article iframe {
     display: flex;
@@ -218,50 +202,32 @@ button.formButton:hover{
 }
 
 
-/*Code yoinked from W3school lmfao */
 
-/*.dropdown {*/
-/*    float: left;*/
-/*    overflow: hidden;*/
-/*}*/
+/*mobile phone/responsive  media query*/
+@media only screen and (max-width: 500px)
+{
+    /* when display gets small, header gets removed for more text display */
+    header{
+        display:none;
+    }
+    /* h2 headers get lose padding when less width is available*/
+    article h2, section h2{
+        margin:0;
+    }
+}
 
-/*.dropdown .dropbtn {*/
-/*    font-size: 16px;*/
-/*    border: none;*/
-/*    outline: none;*/
-/*    color: white;*/
-/*    padding: 14px 16px;*/
-/*    background-color: inherit;*/
-/*    font-family: inherit;*/
-/*    margin: 0;*/
-/*}*/
+/*When screen gets too small for picture display them in a row*/
+@media only screen and (max-width: 860px) {
+    article picture {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5em;
+        object-fit: contain
+    }
 
-/*.dropdown:hover .dropbtn {*/
-/*    background-color: #783e8c;*/
-/*}*/
+    picture img {
+        display: flex;
+        align-self: center;
 
-/*.dropdown-content {*/
-/*    display: none;*/
-/*    position: absolute;*/
-/*    background-color: #f9f9f9;*/
-/*    min-width: 160px;*/
-/*    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
-/*    z-index: 1;*/
-/*}*/
-
-/*.dropdown-content a {*/
-/*    float: none;*/
-/*    color: black;*/
-/*    padding: 12px 16px;*/
-/*    text-decoration: none;*/
-/*    display: block;*/
-/*    text-align: left;*/
-/*}*/
-
-/*.dropdown-content a:hover {*/
-/*    background-color: #ddd;*/
-/*}*/
-
-/*.dropdown:hover .dropdown-content {*/
-/*    display: block;*/
-/*}*/
+    }
+}
