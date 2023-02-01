@@ -7,4 +7,4 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 #npm files
-npm/package.json
+/npm/package.json
