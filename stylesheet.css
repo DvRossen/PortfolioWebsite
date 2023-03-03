@@ -1,9 +1,6 @@
 /* imports*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-
-
-
 /*base settings */
 body{
     min-height:100vh;
@@ -146,6 +143,17 @@ article iframe {
 
 }
 
+/* svg settings and positioning */
+svg.github{
+    /* display: flex; */
+    justify-content: center;
+}
+svg.linkedin{
+    fill:#0072b1;
+}
+svg.youtube{
+    fill: red; 
+}
 /* list stuff */
 
 article#changelog ul.add{
@@ -156,7 +164,8 @@ article#changelog ul.remove{
 }
 article#changelog ul.change {
     list-style-image: url("utils/img/icons/change.png");
-}article#changelog ul.todo {
+}
+article#changelog ul.todo {
      list-style-image: url("utils/img/icons/todo.png");
  }
 
@@ -204,20 +213,20 @@ button.formButton:hover{
 
 
 /*mobile phone/responsive  media query*/
-@media only screen and (max-width: 500px)
-{
+/* @media only screen and (max-width: 500px)
+{ */
     /* when display gets small, header gets removed for more text display */
-    header{
+    /* header{
         display:none;
-    }
+    } */
     /* h2 headers get lose padding when less width is available*/
-    article h2, section h2{
+    /* article h2, section h2{
         margin:0;
     }
-}
+} */
 
 /*When screen gets too small for picture display them in a row*/
-@media only screen and (max-width: 860px) {
+/* @media only screen and (max-width: 860px) {
     article picture {
         display: flex;
         flex-direction: column;
@@ -230,4 +239,4 @@ button.formButton:hover{
         align-self: center;
 
     }
-}
+} */

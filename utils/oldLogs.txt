@@ -1,5 +1,45 @@
+<article id="changelog">
+        <!-- Major update . Small update . bug fix - state of update -->
+        <h1>Website version 1.1.0-a</h1>
+        <h2> Changelog 18/1/23: </h2>
 
+        <h2>Added:</h2>
+        <ul class="add">
+            <li> Temp: TLE, will be merged into college work </li>
+        </ul>
 
+        <h2>Removed:</h2>
+        <ul class="remove">
+            <li>Form link, no need due to assignment being done. Link still available <a href="form.html">here</a> however </li>
+            <li>Temp: gallery, due to being incomplete</li>
+            <li>Temp: socials, due to being incomplete</li>
+            <li>Temp: CLE, will be merged into college work</li>
+        </ul>
+
+        <h2>Updated:</h2>
+        <ul class="change">
+            <li>Changed:"Changed" tab the change log into updated, all the fixes will be listed here too now</li>
+            <li>fixed: phone views</li>
+            <li>fixed: some "funky" css</li>
+        </ul>
+
+        <h2>To do:</h2>
+        <ul class="todo">
+            <li>make universal margin/padding values</li>
+            <li>fix article margins/padding</li>
+            <li>fix gallery</li>
+            <li>fix socials</li>
+            <li>merge TLE and CLE into college work</li>
+            <li>fix Iframe window on CLE page</li>
+            <li>Dropdown menu</li>
+            <li>Fix ugly changelog list</li>
+            <li>Same page content display(JS)</li>
+            <li>Show old logs(JS)</li>
+        </ul>
+
+    </article>
+
+-----------------------------------------18-12-22-18:00--------------------------------------------------------------------
 <article id="changelog">
         <!-- Major update . Small update . bug fix - state of update -->
         <h1>Website version 1.0.0-a</h1>
