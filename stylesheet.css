@@ -34,11 +34,11 @@ nav.navbar{
     background-color: #292929;
 }
 nav.navbar a{
-    font-size: 1em;
+    font-size: 1rem;
     font-family: "Trebuchet MS", sans-serif;
     color: #c1c0bc;
     text-align: center;
-    padding: 0.9em ;
+    padding: 0.9rem ;
     text-decoration: none;
 }
 .navbar a:hover {
@@ -61,11 +61,11 @@ article, section{
     color: #EBFEFF;
     width: 75vw;
     margin:auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-bottom: 1.6em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1.6rem;
 }
-footer{
+/* footer{
     display:flex;
     justify-content: center;
     background-color:#292929;
@@ -82,33 +82,45 @@ footer p{
     font-size: 0.8em;
     color: #c1c0bc;
 
-}
+} */
 
 /*text markup & padding*/
 article h1, section h1{
-    padding:1.5em;
-    padding-left:0.7em;
-    padding-top:0.5em;
+    padding:1.9rem;
+    padding-left:1.3rem;
+    padding-top:1.4rem;
     padding-bottom:0;
     color:#ceaada;
     text-align: start;
-    font-size: 2.3em;
+    font-size: 2.3rem;
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
 }
 
 article h2, section h2{
-    padding:1.5em;
+    padding:1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color:#ceaada;
+    margin:0;
     text-align: start;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-family: 'Varela Round', sans-serif;
     font-weight: normal;
 }
+
+article h2 a, article h2 a:visited{
+    text-decoration: none; 
+    color:#ceaada;
+}
+article h2 a:hover{
+    text-decoration:none;
+    color: #eba9ff;
+}
 article p, section p, article ul li, form.form label.formtext, form.form input.formfield{ /*remove all form stuff when assignment is done */
-    padding: 1.3em;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    padding: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin:0;
     font-size: 1.2em;
     font-family: 'Trebuchet MS', sans-serif;
@@ -128,7 +140,7 @@ article p a:hover, section p a:hover, article li a{
 article picture, article.video{
     display: flex;
     flex-direction: row;
-    margin:0.5em;
+    margin:0.5rem;
     object-fit: contain;
 }
 article picture img{
@@ -144,15 +156,25 @@ article iframe {
 }
 
 /* svg settings and positioning */
-svg.github{
-    /* display: flex; */
-    justify-content: center;
+h2 a svg.github{
+    width: 2rem; 
+    height: 2rem; 
 }
+
 svg.linkedin{
     fill:#0072b1;
+    width: 2rem; 
+    height: 2rem; 
 }
 svg.youtube{
     fill: red; 
+    width: 2rem;
+    height: 2rem;
+}
+svg.email{
+    fill: rgb(136, 156, 255); 
+    width: 2rem;
+    height: 2rem;
 }
 /* list stuff */
 
@@ -170,7 +192,8 @@ article#changelog ul.todo {
  }
 
  /* stuff about forms, remove after assignment */
-form.form {
+
+ form.form {
     display: flex;
     justify-content: start;
     flex-direction:column;
@@ -189,16 +212,16 @@ form.form input.formfield:invalid:not(:placeholder-shown){
 
 button.formButton{
     font-family: "Varela Round", sans-serif;
-    margin-left: 1.3em;
-    margin-top: 0.6em;
+    margin-left: 1.7rem;
+    margin-top: 1rem;
     color:#EBFEFF;
-    font-size: 1.2em;
+    font-size: 1.4rem;
     background-color: #292929;
     display: flex;
     justify-content: start;
     flex-direction: column;
-    max-height: 1.3em;
-    max-width: 5em;
+    max-height: 1.7rem;
+    max-width: 5.4rem;
     border-style: outset ;
     border-color: #000000;
     border-width: 2px;
@@ -212,31 +235,3 @@ button.formButton:hover{
 
 
 
-/*mobile phone/responsive  media query*/
-/* @media only screen and (max-width: 500px)
-{ */
-    /* when display gets small, header gets removed for more text display */
-    /* header{
-        display:none;
-    } */
-    /* h2 headers get lose padding when less width is available*/
-    /* article h2, section h2{
-        margin:0;
-    }
-} */
-
-/*When screen gets too small for picture display them in a row*/
-/* @media only screen and (max-width: 860px) {
-    article picture {
-        display: flex;
-        flex-direction: column;
-        margin: 0.5em;
-        object-fit: contain
-    }
-
-    picture img {
-        display: flex;
-        align-self: center;
-
-    }
-} */
